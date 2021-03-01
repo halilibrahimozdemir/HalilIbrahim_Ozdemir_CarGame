@@ -72,21 +72,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12906}
+      Script: {instanceID: 12772}
     - Class: 114
-      Script: {instanceID: 13250}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13272}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13566}
+      Script: {instanceID: 13274}
     - Class: 114
-      Script: {instanceID: 13668}
+      Script: {instanceID: 13568}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 14214}
     - Class: 114
-      Script: {instanceID: 17918}
+      Script: {instanceID: 14282}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,23 +141,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12906}
+      Script: {instanceID: 12772}
     - Class: 114
-      Script: {instanceID: 13250}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13272}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13566}
+      Script: {instanceID: 13274}
     - Class: 114
-      Script: {instanceID: 13668}
+      Script: {instanceID: 13568}
     - Class: 114
-      Script: {instanceID: 14154}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 14156}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 14214}
     - Class: 114
-      Script: {instanceID: 17918}
+      Script: {instanceID: 14282}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,21 +210,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12906}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13250}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13272}
+      Script: {instanceID: 13274}
     - Class: 114
-      Script: {instanceID: 13566}
+      Script: {instanceID: 13568}
     - Class: 114
-      Script: {instanceID: 13668}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 13942}
+      Script: {instanceID: 13944}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 14282}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -517,6 +517,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameArea
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
@@ -748,12 +754,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameArea
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

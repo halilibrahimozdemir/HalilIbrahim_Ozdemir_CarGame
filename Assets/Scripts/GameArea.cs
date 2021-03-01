@@ -9,6 +9,7 @@ public class GameArea : MonoBehaviour
         if (collision.name.Contains("Car"))
         {
             Destroy(collision.gameObject);
+            GameManager.MyInstance.isThereACar = false;
         }            
     }
 }
