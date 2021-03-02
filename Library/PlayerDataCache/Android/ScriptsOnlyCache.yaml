@@ -2,7 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Car
-    - GameArea
     - GameManager
     - LevelManager
     - SceneDirector
@@ -72,8 +71,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12772}
-    - Class: 114
       Script: {instanceID: 12908}
     - Class: 114
       Script: {instanceID: 13252}
@@ -140,8 +137,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12006}
     - Class: 114
       Script: {instanceID: 12204}
-    - Class: 114
-      Script: {instanceID: 12772}
     - Class: 114
       Script: {instanceID: 12908}
     - Class: 114
@@ -348,7 +343,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 22b3a5053d1bd3c553bdfe258e2588d2
+      Hash: 090f4f1408d02c847fece645aca2a4c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -514,12 +509,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameArea
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f

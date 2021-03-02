@@ -29,7 +29,7 @@ public class Car : MonoBehaviour
     {
        
         transform.position += transform.up * Time.deltaTime * speed;
-        if (GameManager.MyInstance.turningRight)
+        if (GameManager.MyInstance.turningRight && GameManager.MyInstance.isReady)
         {
             Time.timeScale = 1.0f;
 
@@ -38,7 +38,7 @@ public class Car : MonoBehaviour
             
         }
 
-        if (GameManager.MyInstance.turningLeft)
+        if (GameManager.MyInstance.turningLeft && GameManager.MyInstance.isReady)
         {
             Time.timeScale = 1.0f;
 
@@ -79,6 +79,7 @@ public class Car : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // If Car reaches the target
         if (collision.name==GameManager.MyInstance.cars[GameManager.MyInstance.currentCarNum].target.name)
         {
             Debug.Log("GREAT");
@@ -91,13 +92,16 @@ public class Car : MonoBehaviour
                      
             Time.timeScale = 0.0f;
         }
-        else if (collision.name != "GameArea") // When the car go out of the field we need to destroy it.
+        else // When the car go out of the field we need to destroy it.
         {
             Destroy(this.gameObject);
             GameManager.MyInstance.isThereACar = false;
             //Reset the positions and rotations
             GameManager.MyInstance.ghosts[GameManager.MyInstance.currentCarNum].positions.Clear();
             GameManager.MyInstance.ghosts[GameManager.MyInstance.currentCarNum].rotations.Clear();
+
+            GameManager.MyInstance.continueScreen.SetActive(true);
+            GameManager.MyInstance.isReady = false;
             Time.timeScale = 0.0f;
         }
         

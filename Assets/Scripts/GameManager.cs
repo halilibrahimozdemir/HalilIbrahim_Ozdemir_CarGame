@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
         }
     }
     public GameObject finishedLevelScreen;
+    //When player hit an object show a window 
+    public GameObject continueScreen;
+    //When player hit an object we set isReady to false 
+    public bool isReady=true;
 
     public GameObject[] ghostObjects;
     //for instantiating the ghost objects
@@ -117,7 +121,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < currentCarNum; i++)
         {
           
-            if(ghosts[i].k<ghosts[i].positions.Count)
+            if(ghosts[i].k<ghosts[i].positions.Count && ghostObjects[i] != null)
             {
                 ghostObjects[i].transform.position = ghosts[i].positions[ghosts[i].k];
                 ghostObjects[i].transform.rotation = ghosts[i].rotations[ghosts[i].k];
@@ -171,6 +175,16 @@ public class GameManager : MonoBehaviour
         {
             cars[i].target.SetActive(false);
         }
+    }
+
+    public void Continue()
+    {
+        isReady = true;
+        //reset to preventing 
+        turningLeft = false;
+        turningRight = false;
+
+        continueScreen.SetActive(false);
     }
 
 }
